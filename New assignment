@@ -23,7 +23,7 @@ namespace CS_assignment
             double num2 = double.Parse(dname);
             double sum2 = num2 + d;
             Console.WriteLine("Sum is = " + sum2);
-            Console.WriteLine("Acknowledgement");
+            Console.WriteLine("Enter a String");
             string sname = Console.ReadLine();
             Console.WriteLine(s + sname);
             Console.ReadLine();
