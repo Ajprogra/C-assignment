@@ -1,0 +1,22 @@
+using System;
+namespace Assignment
+{
+    class Ascending
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter three number");
+            int num1 = int.Parse(Console.ReadLine());
+            int num2 =
+            int.Parse(Console.ReadLine());
+            int num3 = int.Parse(Console.ReadLine());
+            int[] anum = {num1,num2,num3};
+            Array.Sort(anum);
+            Console.WriteLine ("Show numbers in ascending order");
+            foreach (int number in anum)
+            {
+            Console.WriteLine(number);
+            }
+        }
+    }
+}
