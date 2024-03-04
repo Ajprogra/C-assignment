@@ -1,0 +1,25 @@
+function smallestIndex($arr, $size) {
+    if ($size <= 0) {
+        return -1;
+    }
+
+    $minIndex = 0;
+    for ($i = 1; $i < $size; $i++) {
+        if ($arr[$i] < $arr[$minIndex]) {
+            $minIndex = $i;
+        }
+    }
+
+    return $minIndex;
+
+}
+$testArray = array(5, 3, 8, 2, 7, 1);
+$size = count($testArray);
+
+$index = smallestIndex($testArray, $size);
+
+if ($index != -1) {
+    echo "The smallest element in the array is at index: " . $index;
+} else {
+    echo "Invalid array size provided!";
+}
